@@ -625,18 +625,11 @@ const about = await cursor.toArray();
                   const options = { upsert: true };
                   const updatedDoc = {
                     $set: {
-                      img: updateChoose.img,
-                      whyToptext: updateChoose.whyToptext,
-                      bannerHeadingText1: updateChoose.bannerHeadingText1,
-                      bannerHeadingText2: updateChoose.bannerHeadingText2,
-                      cardTitleOne: updateChoose.cardTitleOne,
-                      cardDescOne: updateChoose.cardDescOne,
-                      cardTitleTwo: updateChoose.cardTitleTwo,
-                      cardDescTwo: updateChoose.cardDescTwo,
-                      cardTitleThree: updateChoose.cardTitleThree,
-                      cardDescThree: updateChoose.cardDescThree,
-                      cardTitleFour: updateChoose.cardTitleFour,
-                      cardDescFour: updateChoose.cardDescFour,
+                      title: updateChoose.title,
+                      description: updateChoose.description,
+                      btnUrl: updateChoose.btnUrl,
+                      btnText: updateChoose.btnText,
+                  
                      
                     },
                   };
